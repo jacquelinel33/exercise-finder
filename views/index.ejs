@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Finder</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+    <form action="/submit" method="POST">
+        <label for="muscle"> Muscle Group:</label>
+        <select name="muscle">
+            <option value="abdominals">abdominals</option>
+            <option value="abductors">abductors</option>
+            <option value="adductors">adductors</option>
+            <option value="biceps">biceps</option>
+            <option value="calves">calves</option>
+            <option value="chest">chest</option>
+            <option value="forearms">forearms</option>
+            <option value="glutes">glutes</option>
+            <option value="hamstrings">hamstrings</option>
+        </select>
+        <input type="submit">
+    </form>
+    <p><%= data %></p>
+</body>
+</html>
