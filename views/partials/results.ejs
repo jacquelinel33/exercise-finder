@@ -1,0 +1,15 @@
+<h1>Results</h1>
+<% if (locals.data) { %>
+    <% data.forEach(exercise => { %>
+        <div>
+        <p>Name: <%= exercise.name %></p> 
+        <p>Type: <%= exercise.type %></p> 
+        <p>Muscle: <%= exercise.muscle %></p> 
+        <p>Difficulty: <%= exercise.difficulty %></p> 
+        <p>Instructions: <%= exercise.instructions %></p> 
+        </div>
+        <hr>
+    <% }) %>
+ <% } else { %>
+    <p>No data found.</p>
+ <% } %>
